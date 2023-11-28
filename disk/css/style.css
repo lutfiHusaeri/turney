@@ -1,0 +1,132 @@
+* {
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url('../../img/jumbotron.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%; 
+  height: 100vh;
+}
+
+/* .about .row .col:nth-child(1) {
+    background-color:  #242d2d   
+} */
+
+.navbar {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.navbar i {
+  color: #fff;  
+}
+
+.navbar i:hover {
+    color: #056fbb;
+    cursor: pointer;
+}
+
+.navbar #ig:hover{
+  color: #d012e5;
+}
+
+.navbar.scrolling-active {
+    background-color: #ADD8E6;
+}
+
+
+.loading::before {
+  content: "";
+  border: 6px solid transparent;
+  border-top: 6px solid white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: calc(50% - 30px); /* Vertically centered */
+  left: calc(50% - 30px); /* Horizontally centered */
+  animation: spin 2s linear infinite, gradation 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes gradation {
+  0% { border-color: transparent transparent white white; }
+  25% { border-color: transparent transparent white transparent; }
+  50% { border-color: white transparent white transparent; }
+  75% { border-color: white transparent transparent transparent; }
+  100% { border-color: white white transparent transparent; }
+}
+
+.produk {
+  padding: 100px 0 100px 0;
+}
+
+.produk img {
+  height: 400px;
+}
+
+.services img {
+  width: 250px;
+  height: 400px;
+}
+
+.services h5 {
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.services i{
+  color: rgb(17, 85, 157);
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .services img {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .services h5 {
+    font-size: 20px;
+  }
+}
+
+.faq {
+  padding-top: 100px;
+}
+
+.faq .accordion {
+  --bs-accordion-bg:  #ADD8E6;
+}
+
+.faq .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+.footer {
+  min-height: 60vh;
+  background-color:  #1d87e3;
+  margin-top: 150px;
+}
+
+.footer .copy {
+  padding-top: 100px;
+} 
+
+
+
